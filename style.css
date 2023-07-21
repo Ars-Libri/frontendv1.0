@@ -25,6 +25,7 @@
     --subtitle-page-montserrat: 'Montserrat', sans-serif;
     --menu-item-montserrat: 'Montserrat', sans-serif;
     --content-article-montserrat:'Montserrat', sans-serif;
+    --content-menu-montserrat: 'Montserrat', sans-serif;
 }
 
 /* DEFAULT STYLE */
@@ -39,7 +40,9 @@ button{
 
 /* HEADER STYLE */
 
-header{
+header#header-page{
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: row;
 
@@ -47,26 +50,79 @@ header{
     justify-content: space-around;
 
     padding: 1rem;
+
+    transition: 1.2s all;
 }
 
 /* MAIN STYLE */
-
+main{
+    width: auto;
+    height: auto;
+    transition: 1.2s all;
+}
 .news{
-
     height: 225px;
+    width: 100%;
     border-radius: 30px;
     background: linear-gradient(360deg, #dbc96c76, #151515);
+}
+
+/* MENU */
+
+nav#nav-general{
+    width: 0;
+    height: 0;
+
+    transition: 1.2s all;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav#nav-general .header-nav-menu{
+    padding-block: 2rem;
+}
+nav#nav-general .content-menu{
+    display: flex;
+    flex-direction: column;
+
+}
+nav#nav-general .content-menu a{
+    background-color: var(--back-card-color);
+    color: var(--text-color);
+
+    text-decoration: none;
+    font-family: var(--content-menu-montserrat);
+    font-size: 32px;
+    font-weight: 300;
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+
+    margin-bottom: 1.5rem;
+    width: 85vw;
+    height: 150px;
+
+    /* transition: 1s all; */
 }
 
 /* SECTION CATEGORIA STYLE */
 
 section{
+    /* width: auto;
+    height: auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 
     padding-block: 1rem;
+    transition: 1.2s width;
 }
 section header{
     width: 100%;
@@ -92,14 +148,16 @@ section header p{
 }
 
 /**/
+
 section .category{
     overflow: auto;
 }
 
 section .category nav{
+    width: calc(108px*4);
     overflow: scroll;
-    width: 120vw;
     display: flex;
+    justify-content: space-around;
 
     padding-block: 0.5rem;
 }
@@ -107,11 +165,12 @@ section .category nav button{
     width: 93px;
     height: 25px;
 
-    margin-left: 1.5rem;
 
     border-radius: 12.5px;
     background-color: var(--back-card-color);
     color: var(--text-color);
+
+    transition: 0.5s all;
 }
 
 /**/
