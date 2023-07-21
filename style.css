@@ -51,14 +51,13 @@ header#header-page{
 
     padding: 1rem;
 
-    transition: 1.2s all;
+    transition: 0.5s all;
 }
 
 /* MAIN STYLE */
 main{
     width: auto;
     height: auto;
-    transition: 1.2s all;
 }
 .news{
     height: 225px;
@@ -73,7 +72,7 @@ nav#nav-general{
     width: 0;
     height: 0;
 
-    transition: 1.2s all;
+    transition: 0.5s all;
 
     display: flex;
     flex-direction: column;
