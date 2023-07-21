@@ -51,7 +51,7 @@ header#header-page{
 
     padding: 1rem;
 
-    transition: 0.2s all;
+    transition: 1s all;
 }
 
 /* MAIN STYLE */
@@ -72,7 +72,7 @@ nav#nav-general{
     width: 0;
     height: 0;
 
-    transition: 0.2s all;
+    transition: 1s all;
 
     display: flex;
     flex-direction: column;
