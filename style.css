@@ -95,14 +95,14 @@ header#header-page{
 
     padding: 1rem;
 
-    transition: 1s all;
+    transition: 0.7s all;
 }
 
 /* MAIN STYLE */
 main{
     width: auto;
     height: auto;
-    transition: 1s all;
+    transition: 0.7s all;
 }
 .news{
     height: 225px;
@@ -122,7 +122,7 @@ section{
 
 
     padding-block: 1rem;
-    transition: 1s all;
+    transition: 0.7s all;
 }
 section header{
     width: 100%;
