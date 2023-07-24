@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title-page">Login Ars Libri</title>
+    <!-- FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CCS LINKS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS LINKS -->
+    <script src="script.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <header>
+        <a tabindex="0" href="../index.html">
+            <h1>ARS LIBRI</h1>
+            <h2>ALL IN ONE</h2>
+        </a>
+    </header>
+    <main>
+        <button class="btn" id="btn-change" onclick="changeOption()">Cadastre-se ></button>
+        <form id="form-login" action="" method="post">
+            <h3>LOGIN</h3>
+            <fieldset form="form-login" id="field-login">
+                <legend>LOGIN</legend>
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email">
+                <label for="password">senha:</label>
+                <input type="password" id="password" name="password">
+            </fieldset>
+            <button id="btn-login" name="btn-login" 
+            type="submit"
+            class="btn">Entrar</button>
+            <div id="g_id_onload"
+                data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                data-login_uri="https://your.domain/your_login_endpoint"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                style="width: 80%; border-radius: 50px;
+                "
+                data-type="standard"
+                data-size="large"
+                data-theme="outline"
+                data-text="sign_in_with"
+                data-shape="rectangular"
+                data-logo_alignment="left"
+                data-locale="pt-br">
+            </div>
+        </form>
+        <form id="form-cad" action="" method="post">
+            <h3>CRIAR CONTA</h3>
+            <fieldset form="form-cad" id="field-cad">
+                <legend>CADASTRO</legend>
+                <label for="name">nome:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email">
+                <label for="password">senha:</label>
+                <input type="password" id="password" name="password">
+            </fieldset>
+            <button id="btn-cad" name="btn-acd" type="submit" class="btn">Cadastrar</button>
+            <div id="g_id_onload"
+                data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                data-login_uri="https://your.domain/your_login_endpoint"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                style="width: 80%; border-radius: 50px;
+                "
+                data-type="standard"
+                data-size="large"
+                data-theme="outline"
+                data-text="sign_in_with"
+                data-shape="rectangular"
+                data-logo_alignment="left"
+                data-locale="pt-br">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

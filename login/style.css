@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Variáveis de font-size, font-family, color e back-color */
+
+:root{
+    /* colors */
+
+    --back-color-default: #151515;
+    --secondary-color-gold: #DBC96C;
+    --text-color: #ffffff;
+    --back-card-color: #212121;
+
+    /* fonts */
+
+    --title-page-dm-serif: 'DM Serif Display', serif;
+    --subtitle-page-dm-serif: 'DM Serif Display', serif;
+    --menu-item-dm-serif:'DM Serif Display', serif;
+    --title-section-montserrat: 'Montserrat', sans-serif;
+    --title-article-montserrat: 'Montserrat', sans-serif;
+    --subtitle-page-montserrat: 'Montserrat', sans-serif;
+    --menu-item-montserrat: 'Montserrat', sans-serif;
+    --content-article-montserrat:'Montserrat', sans-serif;
+    --content-menu-montserrat: 'Montserrat', sans-serif;
+}
+
+/* DEFAULT STYLE */
+
+body{
+    background-color: var(--back-color-default);
+}
+
+/* HEADER STYLE */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-block: 2rem;
+}
+header a{
+    text-decoration: none;
+    text-align: center;
+}
+header a h1{
+    font-family: var(--title-page-dm-serif);
+    font-weight: lighter;
+    font-size: 40px;
+
+    color: var(--text-color);
+}
+header a h2{
+    font-family: var(--subtitle-page-montserrat);
+    font-weight: 400;
+    font-size: 15px;
+
+    color: var(--secondary-color-gold);
+}
+
+/* MAIN AND FORM STYLE */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10vw;
+    padding-block: 10%;
+
+    transition: 0.7s all;
+}
+
+main form{
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+    border-radius: 20px;
+    gap: 1rem;
+
+    color: var(--text-color);
+
+    background-color: var(--back-card-color);
+
+    transition: 0.7s all;
+}
+main form h3{
+    font-family: var(--subtitle-page-dm-serif);
+    font-weight: lighter;
+    font-size: 28px;
+
+    color: var(--text-color);
+}
+main form fieldset{
+    width: 100%;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.7rem;
+
+    color: var(--text-color);
+}
+main form fieldset label{
+    font-family: var(--content-article-montserrat);
+    font-size: 20px;
+    font-weight: 600;
+
+    
+    
+    color: var(--text-color);
+}
+main form fieldset input{
+    width: 80%;
+    height: 27px;
+
+    background-color: var(--back-color-default);
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    padding-inline:0.5rem;
+
+    outline: none;
+    border-radius: 50px;
+    border: none;
+
+    transition: 0.7s;
+
+}
+main form fieldset input:focus{
+    background-color: var(--secondary-color-gold);
+    color: var(--back-color-default);
+}
+main form fieldset legend{
+    color: var(--back-card-color);
+}
+.btn{
+    width: 80%;
+    height: 41px;
+
+    border: none;
+    border-radius: 50px;
+
+    font-family: var(--content-menu-montserrat);
+    font-size: 20px;
+    font-weight: 700;
+
+    text-align: center;
+
+    background-color: var(--secondary-color-gold);
+    color: var(--back-color-default);
+}
+#btn-change{
+    background-color: var(--back-color-default);
+    color: var(--secondary-color-gold);
+    margin-bottom: 1rem;
+}
+main form#form-cad{
+    display: none;
+    height: auto;
+    transition: 0.7s all;
+}
