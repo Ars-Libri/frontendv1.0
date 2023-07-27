@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de font-size, font-family, color e back-color */
+
+:root{
+    /* colors */
+
+    --back-color-default: #151515;
+    --secondary-color-gold: #DBC96C;
+    --text-color: #ffffff;
+    --back-card-color: #212121;
+
+    /* fonts */
+
+    --title-page-dm-serif: 'DM Serif Display', serif;
+    --subtitle-page-dm-serif: 'DM Serif Display', serif;
+    --menu-item-dm-serif:'DM Serif Display', serif;
+    --title-section-montserrat: 'Montserrat', sans-serif;
+    --title-article-montserrat: 'Montserrat', sans-serif;
+    --subtitle-page-montserrat: 'Montserrat', sans-serif;
+    --menu-item-montserrat: 'Montserrat', sans-serif;
+    --content-article-montserrat:'Montserrat', sans-serif;
+    --content-menu-montserrat: 'Montserrat', sans-serif;
+}
+
+/* DEFAULT STYLE */
+
+body{
+    background-color: var(--back-color-default);
+    overflow-x: hidden;
+}
+button{
+    background: none;
+    border: none;
+}
+
+/* HEADER STYLE */
+
+header#header-page{
+    display: grid;
+    grid-template-areas: 
+    "pesquisa filtro"
+    "input input"
+    ;
+    grid-template-columns: 50vw;
+    grid-template-rows: auto;
+
+}
+header#header-page #text-pesquisa{
+    grid-area: pesquisa;
+
+    text-align: center;
+    padding-block: 1rem;
+
+    font-family: var(--title-page-dm-serif);
+    font-weight: lighter;
+
+    color: var(--text-color);
+}
+header#header-page button{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header#header-page form{
+    grid-area: input;
+
+    padding-inline: 10vw;
+}
+header#header-page form fieldset{
+    display: flex;
+    align-items: center;
+
+    border: none;
+    border-radius: 50px;
+}
+header#header-page form fieldset #search-icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    margin-inline: 0.7rem;
+}
+header#header-page form fieldset input{
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--back-card-color);
+    color: var(--text-color);
+    padding-left: 15%;
+
+    font-size: 16px;
+
+    outline: none;
+    border-radius: 50px;
+    border: none;
+
+    transition: 0.7s all;
+}
+header#header-page form fieldset input:focus{
+    border: 1px solid var(--secondary-color-gold);
+}
+
+/* SECTION STYLE */
+
+section#buscas-recentes {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+
+    overflow: hidden;
+}
+section#buscas-recentes header#section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 10vw;
+    padding-block: 1rem;
+
+}
+section#buscas-recentes header#section-header p, a{
+    text-decoration: none;
+
+    color: var(--text-color);
+}
+section#buscas-recentes header#section-header p{
+    font-family: var(--menu-item-dm-serif);
+    font-weight: lighter;
+    font-size: 22px;
+}
+section#buscas-recentes header#section-header a{
+    font-family: var(--content-menu-montserrat);
+    font-size: 11px;
+}
+section#buscas-recentes .scroll-buscas{
+    overflow: auto;
+}
+section#buscas-recentes .scroll-buscas .articles-buscas-recentes{
+    width: 122rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section#buscas-recentes .scroll-buscas .articles-buscas-recentes article{
+    width: 10rem;
+    height: 8rem;
+    background-color: var(--back-card-color);
+
+    border-radius: 36px;
+}
+
+/* MAIN STYLE */
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+}
+main header{
+    text-align: center;
+
+    padding-block: 1.5rem;
+
+    width: 100%;
+}
+main p{
+    color: var(--text-color);
+
+    font-weight: lighter;
+    font-family: var(--menu-item-dm-serif);
+    font-size: 32px;
+}
+main .explore{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 1.5rem;
+    padding-block: 1rem;
+}
+main .explore article{
+    width: 10rem;
+    height: 8rem;
+    background-color: var(--back-card-color);
+
+    border-radius: 36px;
+}
