@@ -12,15 +12,9 @@ function openMenu(){
     document.getElementById('header-top').style.marginLeft = '100vw';
     document.getElementById('header-main').style.marginLeft = '100vw';
     document.getElementById('header-bottom').style.marginLeft = '100vw';
-    // document.getElementById('main-page').style.marginLeft = '100vw';
-    // document.getElementById('section-page').style.marginLeft = '100vw';
-    // document.getElementById('footer-page').style.marginLeft = '100vw';
-    // document.getElementById('main-page').style.height = '0';
-    // document.getElementById('main-page').style.width = '0';
-    // document.getElementById('section-page').style.height = '0';
-    // document.getElementById('section-page').style.width = '0';
-    // document.getElementById('footer-page').style.width = '0';
-    // document.getElementById('footer-page').style.height = '0';
+    document.getElementById('main-page').style.display = 'none';
+    document.getElementById('img').style.display = 'none';
+    document.getElementById('footer-page').style.display = 'none';
     document.getElementById('nav-general').style.width = '100vw';
     document.getElementById('nav-general').style.height = 'auto';
 }
@@ -38,15 +32,9 @@ function closeMenu(){
     document.getElementById('header-top').style.marginLeft = '0vw';
     document.getElementById('header-main').style.marginLeft = '0vw';
     document.getElementById('header-bottom').style.marginLeft = '0vw';
-    // document.getElementById('main-page').style.marginLeft = '0vw';
-    // document.getElementById('section-page').style.marginLeft = '0vw';
-    // document.getElementById('footer-page').style.marginLeft = '0vw';
-    // document.getElementById('main-page').style.height = 'auto';
-    // document.getElementById('main-page').style.width = 'auto';
-    // document.getElementById('section-page').style.height = 'auto';
-    // document.getElementById('section-page').style.width = 'auto';
-    // document.getElementById('footer-page').style.width = 'auto';
-    // document.getElementById('footer-page').style.height = 'auto';
+    document.getElementById('main-page').style.display = 'flex';
+    document.getElementById('img').style.display = 'block';
+    document.getElementById('footer-page').style.display = 'flex';
     document.getElementById('nav-general').style.width = '0';
     document.getElementById('nav-general').style.height = '0';
 }

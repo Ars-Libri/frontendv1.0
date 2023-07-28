@@ -41,34 +41,30 @@ button{
 /* HEADER STYLE */
 
 header#header-page{
-    display: grid;
-    grid-template-areas: 
-    "pesquisa filtro"
-    "input input"
-    ;
-    grid-template-columns: 50vw;
-    grid-template-rows: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
-header#header-page #text-pesquisa{
-    grid-area: pesquisa;
+header#header-page .top-header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    text-align: center;
+    padding-inline: 10vw;
     padding-block: 1rem;
-
+}
+header#header-page .top-header #text-pesquisa{
     font-family: var(--title-page-dm-serif);
     font-weight: lighter;
 
     color: var(--text-color);
 }
-header#header-page button{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 header#header-page form{
-    grid-area: input;
-
+    width: 100vw;
     padding-inline: 10vw;
 }
 header#header-page form fieldset{
@@ -111,7 +107,6 @@ section#buscas-recentes {
     display: flex;
     flex-direction: column;
     height: auto;
-
 
     overflow: hidden;
 }
