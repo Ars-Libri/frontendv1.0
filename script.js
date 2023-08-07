@@ -37,9 +37,11 @@ function closeMenu(){
 function colorBtnNav(id){
     for(var i = 1;i<5;i++){
         if(id==i){
-            document.getElementById("categoria-"+i).style.color = "var(--secondary-color-gold)";
+            var element = document.getElementById("categoria-"+i);
+            element.classList.add('btn-select-category');
         } else{
-            document.getElementById("categoria-"+i).style.color = "var(--text-color)";
+          var element = document.getElementById("categoria-"+i);
+          element.classList.remove('btn-select-category');
         }
     }
 }

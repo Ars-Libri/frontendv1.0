@@ -90,48 +90,45 @@
     <section id="section-category">
         <header>
             <h2 tabindex="0">Categorias</h2>
-            <p>Selecione uma categoria</p>
         </header>
         <div class="category" aria-label="" >
             <nav>
-                <button id="categoria-1" onclick="colorBtnNav(1)">Literatura</button>
+                <button id="categoria-1" class="btn-select-category" onclick="colorBtnNav(1)">Literatura</button>
                 <button id="categoria-2" onclick="colorBtnNav(2)">Filosofia</button>
                 <button id="categoria-3" onclick="colorBtnNav(3)">Artes</button>
                 <button id="categoria-4" onclick="colorBtnNav(4)">História</button>
             </nav>
         </div>
         <div class="articles">
-            <article id="article-1">
-                <h3>Clássico</h3>
-                <p></p>
-            </article>
-            <article id="article-2">
-                <h3>Medieval</h3>
-                <p></p>
-            </article>
-            <article id="article3">
-                <h3>Realismo</h3>
-                <p></p>
-            </article>
-            <article id="article-4">
-                <h3>Modernismo</h3>
-                <p></p>
-            </article>
-            <article id="article-5">
-                <h3>Grécia</h3>
-                <p></p>
-            </article>
-            <article id="article-6">
-                <h3>Oriente</h3>
-                <p></p>
-            </article>
+            <div class="left">
+                <article class="article img-1">
+                    <img src="assets/home/categorias/1.svg" alt="" width="100%">
+                </article>
+                <article class="article">
+                    <img src="assets/home/categorias/2.svg" alt="" width="100%">
+                </article>
+            </div>
+            <div class="rigth">
+                <article class="article">
+                    <img src="assets/home/categorias/3.svg" alt="" width="100%">
+                </article>
+                <article class="article">
+                    <img src="assets/home/categorias/2.svg" alt="" width="100%">
+                </article>
+            </div>
+            <div class="bottom">
+                <article class="article">
+                    <img src="assets/home/categorias/1.svg" alt="" width="100%">
+                </article>
+                <article class="article">
+                    <img src="assets/home/categorias/3.svg" alt="" width="100%">
+                </article>
+            </div>
         </div>
     </section>
-    <div class="empty">
-
-    </div>
     <section class="section-comunidade hidden"  id="section-comunidade">
         <h1>Comunidade</h1>
+        <span class="span"></span>
         <article class="hidden" id="o-que-e">
             <p class="title-article-comunidade" aria-label="">O que é?</p>
             <p class="content-article-comunidade">A aba comunidade não sei oq nao sei oq la, foi criada com o proposito de unir as pessoas de PCD sei la o que mais, amor e fé, andam lado a lado a todo momento, nem sei oq eu to escrevendo.</p>
@@ -142,6 +139,7 @@
             <p class="content-article-comunidade">A aba comunidade não sei oq nao sei oq la, foi criada com o proposito de unir as pessoas de PCD sei la o que mais, amor e fé, andam lado a lado a todo momento, nem sei oq eu to escrevendo.</p>
             <button class="btn-article-comunidade">Ver mais</button>
         </article>
+        <span class="span"></span>
     </section>
     <footer id="footer-page"></footer>
 </body>

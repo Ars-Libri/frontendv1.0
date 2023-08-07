@@ -38,6 +38,17 @@ button{
     border: none;
 }
 
+.empty{
+    width: 100%;
+    height: 273px;
+
+    margin-block: 2rem;
+
+    border-radius: 20px;
+
+    background: linear-gradient(0deg, #0440ce, #151515 );
+}
+
 /* MENU */
 
 nav#nav-general{
@@ -138,16 +149,17 @@ section{
 section header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     padding-inline: 2rem;
+    padding-block: 2rem;
 }
 section header h2{
     color: var(--text-color);
 
     font-family: var(--title-section-montserrat);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 section header p{
     color: var(--text-color);
@@ -170,7 +182,7 @@ section .category nav{
     display: flex;
     justify-content: space-around;
 
-    padding-block: 0.5rem;
+    padding-block: 1rem;
 }
 section .category nav button{
     width: 110px;
@@ -180,48 +192,64 @@ section .category nav button{
     background-color: var(--back-card-color);
     color: var(--text-color);
 
+
+
     transition: 0.5s all;
+}
+section .category nav button.btn-select-category{
+    background-color: var(--secondary-color-gold); 
+    color: var(--back-color-default); 
+    font-weight: 800;
 }
 
 /**/
 
 section .articles{
-  display: grid;
-  grid-template-areas: 
-  "article1 article2"
-  "article1 article3"
-  "article4 article5"
-  "article6 article6"
-  ;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: auto;
-}
-section .articles article{
-    background-color: var(--back-card-color);
-    color: var(--text-color);
+  display: flex;
+  align-items: center;
 
-    margin: 0.5rem;
-    padding: 1.5rem;
+  margin-bottom: 5rem;
+
+  flex-wrap: wrap;
+}
+
+section .articles .left, section .articles .rigth{
+    width: 50vw;
+    padding: 1rem;
+    height: auto;
+
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .articles .bottom{
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+
+section .articles .article{
+    width: 100%;
+    background-color: var(--back-card-color);
+
     border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
 }
-section .articles article#article-1{
-    grid-area: article1;
-}
-section .articles article#article-2{
-    grid-area: article2;
-}
-section .articles article#article-3{
-    grid-area: article3;
-}
-section .articles article#article-4{
-    grid-area: article4;
-}
-section .articles article#article-5{
-    grid-area: article5;
-}
-section .articles article#article-6{
-    grid-area: article6;
-}
+
+/* section .articles .img-1{
+    background-image: url('assets/home/categorias/1.svg');
+    background-size: cover;
+} */
 
 section .articles article h3{
     font-family: var(--title-article-montserrat);
@@ -242,7 +270,14 @@ section#section-comunidade{
     align-items: center;
     justify-content: center;
 
-    border: 1px solid tomato;
+    background-image: url('assets/home/fundos/image 3.svg');
+    background-size: stretch;
+}
+
+section#section-comunidade span{
+    background-color: var(--secondary-color-gold);
+    width: 60px;
+    height: 5px;
 }
 
 section#section-comunidade h1{
@@ -269,6 +304,7 @@ section#section-comunidade article{
     gap: 2rem;
 
     border: 2px solid var(--back-card-color);
+    background-color: var(--back-color-default);
 
     padding: 2rem;
 
