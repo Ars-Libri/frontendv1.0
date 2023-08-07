@@ -162,7 +162,7 @@ section header p{
 section .category{
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
 }
 
 section .category nav{
@@ -234,6 +234,85 @@ section .articles article p{
     text-align: justify;
 }
 
+/**/
+
+section#section-comunidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid tomato;
+}
+
+section#section-comunidade h1{
+    font-family: var(--title-section-montserrat);
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-block: 2rem;
+
+    color: var(--text-color);
+}
+
+section#section-comunidade article{
+    width: 70vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 2rem;
+
+    border: 2px solid var(--back-card-color);
+
+    padding: 2rem;
+
+}
+
+section#section-comunidade article#o-que-e{
+    border-radius: 10px 10px 0px 0px;
+}
+section#section-comunidade article#como-participar{
+    border-radius: 0px 0px 10px 10px;
+}
+
+section#section-comunidade article p.title-article-comunidade{
+    font-family: var(--content-article-montserrat);
+    font-size: 25px;
+    font-weight: 500;
+
+    color: var(--text-color);
+}
+
+section#section-comunidade article p.content-article-comunidade{
+    font-family: var(--content-article-montserrat);
+    font-size: 16px;
+    font-weight: lighter;
+
+    color: var(--text-color);
+}
+
+section#section-comunidade article .btn-article-comunidade{
+    background-color: var(--back-color-default);
+    color: var(--secondary-color-gold);
+
+    font-family: var(--content-article-montserrat);
+    font-size: 15px;
+    font-weight: 500;
+
+    border: 2px solid var(--secondary-color-gold);
+    border-radius: 10px;
+
+    width: 117px;
+    height: 45px;
+
+    cursor: pointer;
+}
 
 
 
