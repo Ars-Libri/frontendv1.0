@@ -40,7 +40,7 @@
             <a href="./sobre-nos/">SOBRE NÓS</a>
         </div>
     </nav>
-    <header id="header-page" class="header" aria-hidden="false">
+    <header id="header-page" class="header hidden" aria-hidden="false">
         <button aria-label="Botão de 3 barras que da acesso ao menu" onclick="openMenu()">
             <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="41" height="3.90653" fill="#D9D9D9"/>
@@ -61,16 +61,9 @@
         </a>
         
     </header>
-    <main id="main-page">
-        <!-- Sujeito a alterações
-        <div class="news" id="news" role="slider" aria-label="Carrossel de imagens com principais notícias e informações  do site" tabindex="0" title="Imagens de anúncio"> -->
-            <!-- <div class="div-btn-anterior">
-                <button id="btn-ant">
-                    <img src="assets/home/slider/setaSlider.png" alt="Seta indicando para voltar a imagem anterior do slider">
-                </button>
-            </div> -->
+    <main id="main-page" class="hidden">
             <div class="container-slider">
-                <button id="prev-button"><img src="./assets/home/slider/setaSlider.png" alt="prev-button"></button>
+                <button id="prev-button" class="arrow-slide"><img src="./assets/home/slider/setaSlider.png" alt="prev-button"></button>
                 <div class="container-images">
                   <img src="./assets/home/slider/1.png" alt="" class="slider on">
                   <img src="./assets/home/slider/2.gif" alt="" class="slider">
@@ -78,16 +71,10 @@
                   <img src="./assets/home/slider/4.jpg" alt="" class="slider">
                   <img src="./assets/home/slider/5.png" alt="" class="slider">
                 </div>
-                <button id="next-button"><img src="./assets/home/slider/setaSlider.png" alt="Próxima imagem" width="auto"></button>
+                <button id="next-button" class="arrow-slide"><img src="./assets/home/slider/setaSlider.png" alt="Próxima imagem" width="auto"></button>
               </div>
-            <!-- <div class="div-btn-next">
-                <button id="btn-next">
-                    <img src="assets/home/slider/setaSlider.png" alt="Seta indicando para voltar a imagem anterior do slider">
-                </button>
-            </div> -->
-        <!-- </div> -->
     </main>
-    <section id="section-category">
+    <section id="section-category" class="hidden">
         <header>
             <h2 tabindex="0">Categorias</h2>
         </header>
@@ -101,26 +88,32 @@
         </div>
         <div class="articles">
             <div class="left">
-                <article class="article img-1">
+                <article class="article">
+                    <h3 class="texts-absolute">Clássico</h3>
                     <img src="assets/home/categorias/1.svg" alt="" width="100%">
                 </article>
                 <article class="article">
-                    <img src="assets/home/categorias/2.svg" alt="" width="100%">
+                    <h3 class="texts-absolute">Random</h3>
+                    <img src="assets/home/categorias/2.svg" alt="" height="100%">
                 </article>
             </div>
             <div class="rigth">
                 <article class="article">
+                    <h3 class="texts-absolute">Random</h3>
                     <img src="assets/home/categorias/3.svg" alt="" width="100%">
                 </article>
                 <article class="article">
+                    <h3 class="texts-absolute">Random</h3>
                     <img src="assets/home/categorias/2.svg" alt="" width="100%">
                 </article>
             </div>
             <div class="bottom">
                 <article class="article">
+                    <h3 class="texts-absolute">Random</h3>
                     <img src="assets/home/categorias/1.svg" alt="" width="100%">
                 </article>
                 <article class="article">
+                    <h3 class="texts-absolute">Random</h3>
                     <img src="assets/home/categorias/3.svg" alt="" width="100%">
                 </article>
             </div>
@@ -129,18 +122,18 @@
     <section class="section-comunidade hidden"  id="section-comunidade">
         <h1>Comunidade</h1>
         <span class="span"></span>
-        <article class="hidden" id="o-que-e">
+        <article id="o-que-e">
             <p class="title-article-comunidade" aria-label="">O que é?</p>
             <p class="content-article-comunidade">A aba comunidade não sei oq nao sei oq la, foi criada com o proposito de unir as pessoas de PCD sei la o que mais, amor e fé, andam lado a lado a todo momento, nem sei oq eu to escrevendo.</p>
             <button class="btn-article-comunidade">Ver mais</button>
         </article>
-        <article class="hidden" id="como-participar">
+        <article id="como-participar">
             <p class="title-article-comunidade" aria-label="">Como participar?</p>
             <p class="content-article-comunidade">A aba comunidade não sei oq nao sei oq la, foi criada com o proposito de unir as pessoas de PCD sei la o que mais, amor e fé, andam lado a lado a todo momento, nem sei oq eu to escrevendo.</p>
             <button class="btn-article-comunidade">Ver mais</button>
         </article>
         <span class="span"></span>
     </section>
-    <footer id="footer-page"></footer>
+    <footer class="hidden" id="footer-page"></footer>
 </body>
 </html>

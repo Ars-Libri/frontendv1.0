@@ -170,7 +170,7 @@ main form fieldset legend{
 #btn-change{
     background-color: var(--back-color-default);
     color: var(--secondary-color-gold);
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 main form#form-cad{
     display: none;

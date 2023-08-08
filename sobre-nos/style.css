@@ -41,6 +41,12 @@ button{
     border: none;
 }
 
+.hidden{
+    transition: 0.7s all;
+}
+
+/* menu style */
+
 nav#nav-general{
     width: 0;
     height: 0;

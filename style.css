@@ -130,9 +130,10 @@ header#header-page #logo-header img{
 }
 
 /* MAIN STYLE */
-/* main{
+
+main{
     transition: 0.7s all;
-} */
+}
 
 
 /* SECTION CATEGORIA STYLE */
@@ -202,11 +203,12 @@ section .category nav button.btn-select-category{
     font-weight: 800;
 }
 
-/**/
+/* */
 
 section .articles{
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 
   margin-bottom: 5rem;
 
@@ -214,9 +216,9 @@ section .articles{
 }
 
 section .articles .left, section .articles .rigth{
-    width: 50vw;
-    padding: 1rem;
+    width: 50%;
     height: auto;
+    padding: 1rem;
 
     gap: 1rem;
 
@@ -227,7 +229,7 @@ section .articles .left, section .articles .rigth{
 }
 
 section .articles .bottom{
-    width: 100vw;
+    width: 100%;
     height: auto;
 
     display: flex;
@@ -246,23 +248,29 @@ section .articles .article{
     flex-direction: column;
 }
 
-/* section .articles .img-1{
-    background-image: url('assets/home/categorias/1.svg');
-    background-size: cover;
-} */
-
 section .articles article h3{
     font-family: var(--title-article-montserrat);
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 700;
+
+    margin: 5% 0 0 5%;
+
+    color: var(--text-color);
+
+    position: absolute;
 }
+
+.texts-absolute{
+    transition: 0.7s all;
+}
+ 
 section .articles article p{
     font-family: var(--content-article-montserrat);
     font-size: 12px;
     text-align: justify;
 }
 
-/**/
+/* SECTION COMUNIDADE STYLE */
 
 section#section-comunidade{
     display: flex;
@@ -364,7 +372,6 @@ section#section-comunidade article .btn-article-comunidade{
     width: 100%;
     height: 232px;
     align-items: center;
-    justify-content: center;
   }
   
   .container-images {
@@ -372,13 +379,13 @@ section#section-comunidade article .btn-article-comunidade{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 700px;
+    width: 100%;
     height: 100%;
 
   }
   .slider {
     opacity: 0;
-    transition: opacity .2s;
+    transition: opacity 0.7s;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -392,11 +399,19 @@ section#section-comunidade article .btn-article-comunidade{
   }
   
   #prev-button, #next-button {
-    z-index: 1;
-    width: 100px;
-    cursor: pointer;
+    position: absolute;
 
-    margin-inline: 0.5rem;
+    z-index: 1;
+    width: 13vw;
+    cursor: pointer;
+  }
+
+  #prev-button{
+    margin-left: 3vw;
+  }
+
+  #next-button{
+    margin-left: 84vw;
   }
   
   #prev-button img, #next-button img {
@@ -406,4 +421,8 @@ section#section-comunidade article .btn-article-comunidade{
   
   #next-button {
     transform: rotate(180deg);
+  }
+  
+  .arrow-slide{
+    transition: 0.7s all;
   }
