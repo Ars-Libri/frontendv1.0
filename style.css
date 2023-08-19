@@ -10,10 +10,13 @@
 :root{
     /* colors */
 
+    --black: #000000;
     --back-color-default: #151515;
+    --back-color-text: #151515ab;
     --secondary-color-gold: #DBC96C;
     --text-color: #ffffff;
     --back-card-color: #212121;
+    --back-btn-chronos: #D9D9D9;
 
     /* fonts */
 
@@ -26,6 +29,7 @@
     --menu-item-montserrat: 'Montserrat', sans-serif;
     --content-article-montserrat:'Montserrat', sans-serif;
     --content-menu-montserrat: 'Montserrat', sans-serif;
+    --digital-numbers: 'Digital Numbers', sans-serif;
 }
 
 /* DEFAULT STYLE */
@@ -240,6 +244,7 @@ section .articles .bottom{
 
 section .articles .article{
     width: 100%;
+    height: auto;
     background-color: var(--back-card-color);
 
     border-radius: 14px;
@@ -256,6 +261,10 @@ section .articles article h3{
     margin: 5% 0 0 5%;
 
     color: var(--text-color);
+    background-color: var(--back-color-text);
+
+    padding: 0.3rem;
+    border-radius: 7px;
 
     position: absolute;
 }
@@ -357,6 +366,122 @@ section#section-comunidade article .btn-article-comunidade{
 
     cursor: pointer;
 }
+
+/* SECTION CHRONOS STYLE */
+
+section#section-chronos{
+    display: flex;
+    flex-direction: column;
+}
+section#section-chronos .svg-fumaca{
+    position: absolute;
+}
+section#section-chronos #svg-fumaca-1{
+    margin: -200px 0px 0px 0px;
+}
+section#section-chronos .div-chronos-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-block: 3rem;
+    gap: 3rem;
+}
+section#section-chronos .div-chronos-header h1{
+    font-family: var(--title-section-montserrat);
+    font-size: 32px;
+
+    color: var(--text-color);
+}
+section#section-chronos p{
+    font-family: var(--content-menu-montserrat);
+    font-size: 20px;
+
+    color: var(--text-color);
+
+    margin-inline: 20vw;
+
+    text-align: center;
+}
+section#section-chronos .div-chronos-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-block: 12rem;
+    gap: 3rem;
+}
+section#section-chronos .div-chronos-mid #div-img-absolute-right{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -200px;
+}
+section#section-chronos .div-chronos-mid #div-img-absolute-left{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 450px;
+}
+section#section-chronos .div-chronos-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25vh;
+    margin-bottom: 4rem;
+}
+section#section-chronos .div-chronos-bottom #digital-number-2023{
+    background-color: var(--black);
+    color: var(--text-color);
+
+    font-family: var(--digital-numbers);
+    font-size: 80px;
+
+    width: 85%;
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    text-shadow: var(--text-color) 1px 0 10px;
+
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+section#section-chronos .div-chronos-bottom #btn-chronos{
+    width: 80%;
+    height: 70px;
+
+    font-family: var(--menu-item-montserrat);
+
+    color: var(--black);
+    font-weight: 900;
+    font-size: 32px;
+
+    border-radius: 10px;
+
+    background-color: var(--back-btn-chronos);
+}
+section#section-chronos .div-chronos-bottom .div-fumaca-bottom{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+}
+section#section-chronos .div-chronos-bottom #div-fumaca-bottom-left{
+    margin-top: 410px;
+}
+section#section-chronos .div-chronos-bottom #div-fumaca-bottom-right{
+    justify-content: flex-end;
+
+    margin-bottom: 300px;
+}
+
 
 
 
