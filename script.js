@@ -2,7 +2,7 @@ function openMenu(){
   var textsAbsolute = document.getElementsByClassName('texts-absolute');
 
   for(var i = 0;i<textsAbsolute.length;i++){
-    textsAbsolute[i].style.width = '0';
+    textsAbsolute[i].style.display = 'none';
   }
 
   //
@@ -33,7 +33,7 @@ function closeMenu(){
   var textsAbsolute = document.getElementsByClassName('texts-absolute');
 
   for(var i = 0;i<textsAbsolute.length;i++){
-    textsAbsolute[i].style.width = 'auto';
+    textsAbsolute[i].style.display = 'block';
   }
 
   //
