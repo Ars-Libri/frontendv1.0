@@ -16,7 +16,9 @@
 
     <!-- JS LINKS -->
     <script src="script.js"></script>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async="defer"></script>
+    <script src="../node_modules/jwt-decode/build/jwt-decode.js"></script>
+
 </head>
 <body>
     <header>
@@ -39,22 +41,8 @@
             <button id="btn-login" name="btn-login" 
             type="submit"
             class="btn">Entrar</button>
-            <div id="g_id_onload"
-                data-client_id="302936220438-ohlsb3k35a7gtila8lec7ha4gh5ui85t.apps.googleusercontent.com"
-                data-login_uri="https://your.domain/your_login_endpoint"
-                data-auto_prompt="false">
-            </div>
-            <div class="g_id_signin"
-                style="width: 80%; border-radius: 50px;
-                "
-                data-type="standard"
-                data-size="large"
-                data-theme="outline"
-                data-text="sign_in_with"
-                data-shape="rectangular"
-                data-logo_alignment="left"
-                data-locale="pt-br">
-            </div>
+            <div id="buttonDiv"></div>
+            
         </form>
         <form id="form-cad" action="" method="post">
             <h3>CRIAR CONTA</h3>
@@ -68,23 +56,26 @@
                 <input type="password" id="password" name="password">
             </fieldset>
             <button id="btn-cad" name="btn-acd" type="submit" class="btn">Cadastrar</button>
-            <div id="g_id_onload"
-                data-client_id="YOUR_GOOGLE_CLIENT_ID"
-                data-login_uri="https://your.domain/your_login_endpoint"
-                data-auto_prompt="false">
-            </div>
-            <div class="g_id_signin"
-                style="width: 80%; border-radius: 50px;
-                "
-                data-type="standard"
-                data-size="large"
-                data-theme="outline"
-                data-text="sign_in_with"
-                data-shape="rectangular"
-                data-logo_alignment="left"
-                data-locale="pt-br">
-            </div>
+            <div id="buttonDiv"></div>
         </form>
     </main>
+    <script>
+        function handleCredentialResponse(response) {
+            var decoded = jwt_decode(response.credential);
+            console.log(decoded);
+        }
+    
+        window.onload = function () {
+            google.accounts.id.initialize({
+                client_id: "302936220438-grbckv69c2ddiisoc3js32o7ir9fnasr.apps.googleusercontent.com",
+                callback: handleCredentialResponse
+        });
+            google.accounts.id.renderButton(
+                document.getElementById("buttonDiv"),
+                { theme: "outline", size: "large" }  // customization attributes
+            );
+          google.accounts.id.prompt(); // also display the One Tap dialog
+        }
+    </script>
 </body>
 </html>
