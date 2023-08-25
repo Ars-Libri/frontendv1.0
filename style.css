@@ -552,10 +552,10 @@ section#section-chronos .div-chronos-bottom #div-fumaca-bottom-right{
     z-index: 1;
     cursor: pointer;
   }
-  #prev-button:focus, #next-button:focus{
+/*   #prev-button:focus, #next-button:focus{
     outline: none;
     background-color: #0440ce;
-  }
+  } */
   
   #next-button {
     transform: rotate(180deg);
