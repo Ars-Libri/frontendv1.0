@@ -17,6 +17,7 @@
     --text-color: #ffffff;
     --back-card-color: #212121;
     --back-btn-chronos: #D9D9D9;
+    --back-img-perfil-menu: #d9d9d950;
 
     /* fonts */
 
@@ -65,8 +66,114 @@ nav#nav-general{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: var(--back-color-default);
+    background-image: url(assets/home/menu/elipses-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-nav#nav-general .header-nav-menu{
+
+nav#nav-general .perfil-or-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+}
+
+nav#nav-general .perfil-or-login .img-perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  background-color: var(--back-img-perfil-menu);
+  border-radius: 50px;
+}
+
+nav#nav-general .perfil-or-login .text #welcome{
+  font-family: var(--menu-item-montserrat);
+  font-size: 12px;
+
+  color: var(--text-color);
+}
+
+nav#nav-general .perfil-or-login .text #name-user-or-login{
+  font-family: var(--menu-item-montserrat);
+  font-size: 20px;
+  font-weight: bold;
+
+  color: var(--text-color);
+
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+nav#nav-general hr{
+  width: 80%;
+
+  margin-block: 2rem;
+}
+
+nav#nav-general h2{
+  font-family: var(--subtitle-page-montserrat);
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--text-color);
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav#nav-general .menu{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+
+  width: 70%;
+}
+
+nav#nav-general .menu h3{
+  font-family: var(--menu-item-montserrat);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+nav#nav-general .menu a{
+  padding-left: 1rem;
+
+  width: 100%;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+
+
+  border-radius: 10px;
+
+  font-family: var(--menu-item-montserrat);
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--text-color);
+
+  gap: 1rem;
+}
+
+
+/* nav#nav-general .header-nav-menu{
     padding-block: 2rem;
 }
 nav#nav-general .content-menu{
@@ -95,8 +202,8 @@ nav#nav-general .content-menu a{
     width: 85vw;
     height: 150px;
 
-    /* transition: 1s all; */
-}
+    transition: 1s all;
+}  */
 
 /* HEADER STYLE */
 

@@ -22,7 +22,77 @@
 </head>
 <body>
     <nav id="nav-general">
-        <div class="header-nav-menu">
+        <button onclick="closeMenu()">
+            <img src="assets/home/menu/back-bottom.svg" alt="">
+        </button>
+        <div class="perfil-or-login">
+            <div class="img-perfil">
+                <img src="assets/home/menu/login-icon.svg" alt="" width="74px">
+            </div>
+            <div class="text">
+                <p id="welcome">Bem vindo,</p>
+                <p id="name-user-or-login">Fazer login
+                    <img src="assets/home/menu/arrow-perfil.svg" alt="">
+                </p>
+            </div>
+        </div>
+        <hr>
+        <h2>VER MEU PERFIL 
+            <img src="assets/home/menu/arrow-perfil.svg" alt="">
+        </h2>
+        <div class="menu">
+            <h3>Menu</h3>
+            <a href="" class="item-menu" style="background-color: var(--secondary-color-gold); color: var(--back-color-default);">
+                <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.2707 0.777328C12.6657 0.356276 13.3343 0.356275 13.7293 0.777328L22.6782 10.3158C23.2773 10.9544 22.8245 12 21.9489 12H4.05107C3.17545 12 2.72268 10.9544 3.32179 10.3158L12.2707 0.777328Z" fill="#212121"/>
+                    <path d="M3.05884 11H10.7059V22H8.05884C5.29741 22 3.05884 19.7614 3.05884 17V11Z" fill="#212121"/>
+                    <path d="M15.2941 11H22.9412V17C22.9412 19.7614 20.7026 22 17.9412 22H15.2941V11Z" fill="#212121"/>
+                    <rect x="3.05884" y="11" width="19.8824" height="7.33333" fill="#212121"/>
+                    </svg>
+                    
+                Página Inicial</a>
+            <a href="" class="item-menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                    <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                    <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                    <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                    </svg>
+                Categorias</a>
+            <a href="" class="item-menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                </svg>
+                Comunidade</a>
+            <a href="" class="item-menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                </svg>
+                Chronos</a>
+            <a href="" class="item-menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                </svg>
+                Sobre nós</a>
+            <a href="" class="item-menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
+                </svg>
+                Ajuda</a>
+        </div>
+        <!-- <div class="header-nav-menu">
             <button onclick="closeMenu()">
                 <svg width="75" height="76" viewBox="0 0 75 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="28" width="75" height="5.52632" fill="#D9D9D9"/>
@@ -39,7 +109,8 @@
             <a href="./cronologia/">CHRONOS</a>
             <a href="./login/">LOGIN E CADASTRO</a>
             <a href="./sobre-nos/">SOBRE NÓS</a>
-        </div>
+        </div> -->
+        
     </nav>
     <header id="header-page" class="header hidden" aria-hidden="false">
         <button aria-label="Botão de 3 barras que da acesso ao menu" onclick="openMenu()">
