@@ -492,27 +492,23 @@ section#section-chronos .div-chronos-bottom #div-fumaca-bottom-right{
 .container-slider {
     display: flex;
 
-    margin-top: 0.5rem;
-
     width: 100%;
-    height: 232px;
+
+    margin-top: 0.5rem;
     align-items: center;
   }
   
   .container-images {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     width: 100%;
-    height: 100%;
-
   }
   .slider {
-    opacity: 0;
-    transition: opacity 0.7s;
-    position: absolute;
-    height: 100%;
+    display: none;
+    transition: display 0.7s;
+    /* position: absolute; */
     width: 100%;
     border-radius: 10px;
     z-index: 0;
@@ -520,28 +516,45 @@ section#section-chronos .div-chronos-bottom #div-fumaca-bottom-right{
   }
   
   .on {
-    opacity: 1;
+    display: block;
   }
-  
-  #prev-button, #next-button {
-    position: absolute;
 
+  .radios-slider{
+    position: absolute;
     z-index: 1;
-    width: 13vw;
+
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 10px;
+  }
+  .radios-slider input:checked{
+    accent-color: var(--secondary-color-gold);
+    transition: 1s all;
+  }
+  /* .radios-slider input:focus{
+    outline: none;
+    background-color: #0440ce;
+  } */
+  
+  .control-buttons{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+  }
+
+  #prev-button, #next-button {
+    z-index: 1;
     cursor: pointer;
   }
-
-  #prev-button{
-    margin-left: 3vw;
-  }
-
-  #next-button{
-    margin-left: 84vw;
-  }
-  
-  #prev-button img, #next-button img {
-    width: 100%;
-    height: 100%;
+  #prev-button:focus, #next-button:focus{
+    outline: none;
+    background-color: #0440ce;
   }
   
   #next-button {
@@ -551,3 +564,79 @@ section#section-chronos .div-chronos-bottom #div-fumaca-bottom-right{
   .arrow-slide{
     transition: 0.7s all;
   }
+
+
+
+/* MEDIA QUERYS */
+
+/* CSS media query dentro de um stylesheet */
+/* @media (min-width: 510px) {
+    .container-slider {
+        height: 300px;
+      }
+      #prev-button, #next-button {
+        width: 8vw;
+      }
+      #prev-button{
+        margin-left: 5vw;
+      }
+      #next-button{
+        margin-left: 84.5vw;
+      }
+}
+@media (min-width: 620px) {
+    .container-slider {
+        height: 400px;
+      }
+      #prev-button, #next-button {
+        width: 6vw;
+      }
+      #prev-button{
+        margin-left: 4vw;
+      }
+      #next-button{
+        margin-left: 88vw;
+      }
+}
+@media (min-width: 800px) {
+    .container-slider {
+        height: 550px;
+      }
+      #prev-button, #next-button {
+        width: 6vw;
+      }
+      #prev-button{
+        margin-left: 4vw;
+      }
+      #next-button{
+        margin-left: 88vw;
+      }
+}
+@media (min-width: 1100px) {
+    .container-slider {
+        height: 700px;
+      }
+      #prev-button, #next-button {
+        width: 4vw;
+      }
+      #prev-button{
+        margin-left: 2vw;
+      }
+      #next-button{
+        margin-left: 92.5vw; 
+    } 
+}
+@media (min-width: 1500px) {
+    .container-slider {
+        height: 850px;
+      }
+      #prev-button, #next-button {
+        width: 3vw;
+      }
+      #prev-button{
+        margin-left: 2vw;
+      }
+      #next-button{
+        margin-left: 94vw;
+      }
+} */

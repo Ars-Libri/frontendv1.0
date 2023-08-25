@@ -73,11 +73,14 @@ function colorBtnNav(id){
 }
 /* Script slider */
 
+
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
 
 let currentSlide = 0;
+
+window.onload = checkedRadio(currentSlide);
 
 function hideSlider() {
   slider.forEach(item => item.classList.remove('on'))
@@ -87,12 +90,24 @@ function showSlider() {
   slider[currentSlide].classList.add('on')
 }
 
+function checkedRadio(currentSlide){
+    for(var i=0;i<5;i++){
+      if(i != currentSlide){
+        document.getElementById('radio'+i).checked = false;
+      } else if(i===currentSlide){
+        document.getElementById('radio'+i).checked = true;
+      }
+    }
+  }
+
 function nextSlider() {
   hideSlider()
   if(currentSlide === slider.length -1) {
     currentSlide = 0
+    checkedRadio(currentSlide)
   } else {
     currentSlide++
+    checkedRadio(currentSlide)
   }
   showSlider()
 }
@@ -101,13 +116,34 @@ function prevSlider() {
   hideSlider()
   if(currentSlide === 0) {
     currentSlide = slider.length -1
+    checkedRadio(currentSlide)
   } else {
     currentSlide--
+    checkedRadio(currentSlide)
   }
   showSlider()
+}
+
+function radioBtn(value){
+  if(currentSlide > value){
+    currentSlide = value+1;
+    prevSlider();
+  } else if(currentSlide == value){
+    
+  } else{
+    currentSlide = value-1;
+    nextSlider();
+  }
+  for(var i=0;i<5;i++){
+    if(i != value){
+      document.getElementById('radio'+i).checked = false;
+    } else{
+      document.getElementById('radio'+i).checked = true;
+    }
+  }
 }
 
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
 
-setInterval(nextSlider, 7000);
+setInterval(nextSlider, 14000);

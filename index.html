@@ -64,15 +64,24 @@
     </header>
     <main id="main-page" class="hidden">
             <div class="container-slider">
-                <button id="prev-button" class="arrow-slide"><img src="./assets/home/slider/setaSlider.png" alt="prev-button"></button>
-                <div class="container-images">
-                  <img src="./assets/home/slider/a-medusa-de-caravaggio.png" alt="" class="slider on">
-                  <img src="./assets/home/slider/os-miseraveis.png" alt="" class="slider">
-                  <img src="./assets/home/slider/a-medusa-de-caravaggio.png" alt="" class="slider">
-                  <img src="./assets/home/slider/os-miseraveis.png" alt="" class="slider">
-                  <img src="./assets/home/slider/a-medusa-de-caravaggio.png" alt="" class="slider">
+                <div class="control-buttons">
+                    <button id="prev-button" class="arrow-slide"><img src="./assets/home/slider/setaSlider.png" alt="prev-button"></button>
+                    <button id="next-button" class="arrow-slide"><img src="./assets/home/slider/setaSlider.png" alt="Próxima imagem" width="auto"></button>
                 </div>
-                <button id="next-button" class="arrow-slide"><img src="./assets/home/slider/setaSlider.png" alt="Próxima imagem" width="auto"></button>
+                <div class="container-images">
+                    <div class="radios-slider">
+                        <input class="radio-btn" type="radio" name="radio0" id="radio0" value="0" onclick="radioBtn(0)" tabindex="0">
+                        <input class="radio-btn" type="radio" name="radio1" id="radio1" value="1" onclick="radioBtn(1)">
+                        <input class="radio-btn" type="radio" name="radio2" id="radio2" value="2" onclick="radioBtn(2)">
+                        <input class="radio-btn" type="radio" name="radio3" id="radio3" value="3" onclick="radioBtn(3)">
+                        <input class="radio-btn" type="radio" name="radio4" id="radio4" value="4" onclick="radioBtn(4)">
+                    </div>
+                  <img src="./assets/home/slider/a-medusa-de-caravaggio.png" alt="" class="slider on" width="100%" height="100%">
+                  <img src="./assets/home/slider/os-miseraveis.png" alt="" class="slider" width="100%" height="100%">
+                  <img src="./assets/home/slider/a-medusa-de-caravaggio.png" alt="" class="slider" width="100%" height="100%">
+                  <img src="./assets/home/slider/os-miseraveis.png" alt="" class="slider" width="100%" height="100%">
+                  <img src="./assets/home/slider/a-medusa-de-caravaggio.png" alt="" class="slider" width="100%" height="100%">
+                </div>
               </div>
     </main>
     <section id="section-category" class="hidden">
