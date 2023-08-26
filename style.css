@@ -42,16 +42,8 @@ button{
     background: none;
     border: none;
 }
-
-.empty{
-    width: 100%;
-    height: 273px;
-
-    margin-block: 2rem;
-
-    border-radius: 20px;
-
-    background: linear-gradient(0deg, #0440ce, #151515 );
+a{
+  text-decoration: none;
 }
 
 /* MENU */
@@ -60,17 +52,17 @@ nav#nav-general{
     width: 0;
     height: 0;
 
-    transition: 1s all;
+    transition: 0.5s width;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    background-color: var(--back-color-default);
+    /* background-color: var(--back-color-default);
     background-image: url(assets/home/menu/elipses-background.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 nav#nav-general .perfil-or-login{
@@ -79,7 +71,7 @@ nav#nav-general .perfil-or-login{
   justify-content: center;
   gap: 1.5rem;
 
-  margin-top: 2rem;
+  /* margin-top: 1rem; */
 }
 
 nav#nav-general .perfil-or-login .img-perfil{
@@ -87,8 +79,8 @@ nav#nav-general .perfil-or-login .img-perfil{
   align-items: center;
   justify-content: center;
 
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
 
   background-color: var(--back-img-perfil-menu);
   border-radius: 50px;
@@ -103,7 +95,7 @@ nav#nav-general .perfil-or-login .text #welcome{
 
 nav#nav-general .perfil-or-login .text #name-user-or-login{
   font-family: var(--menu-item-montserrat);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 
   color: var(--text-color);
@@ -146,9 +138,11 @@ nav#nav-general .menu{
 
 nav#nav-general .menu h3{
   font-family: var(--menu-item-montserrat);
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 600;
   color: var(--text-color);
+
+  margin-bottom: 1rem;
 }
 
 nav#nav-general .menu a{

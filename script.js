@@ -1,4 +1,8 @@
 function openMenu(){
+  document.body.style.backgroundImage = "url('assets/home/menu/elipses-background.svg')";
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundRepeat = "no-repeat";
+
   var textsAbsolute = document.getElementsByClassName('texts-absolute');
 
   for(var i = 0;i<textsAbsolute.length;i++){
@@ -30,6 +34,10 @@ function openMenu(){
   document.getElementById('nav-general').style.height = 'auto';
 }
 function closeMenu(){
+  document.body.style.backgroundImage = "";
+  document.body.style.backgroundSize = "";
+  document.body.style.backgroundRepeat = "";
+
   var textsAbsolute = document.getElementsByClassName('texts-absolute');
 
   for(var i = 0;i<textsAbsolute.length;i++){

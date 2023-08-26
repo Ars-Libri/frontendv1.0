@@ -15,102 +15,50 @@
 
     <!-- CCS LINKS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- JS LINKS -->
-    <script src="script.js" defer></script>
-
 </head>
-<body>
+<body id="body">
     <nav id="nav-general">
         <button onclick="closeMenu()">
             <img src="assets/home/menu/back-bottom.svg" alt="">
         </button>
+        <div class="menu">
+            <h3>Menu</h3>
+            <a href="./index.html" class="item-menu" style="background-color: var(--secondary-color-gold); color: var(--back-color-default);">
+                <img src="assets/home/menu/home-icon.svg" alt="">
+                Página Inicial</a>
+            <a href="" class="item-menu">
+                <img src="assets/home/menu/cat-icon.svg" alt="">
+                Categorias</a>
+            <a href="" class="item-menu">
+                <img src="assets/home/menu/com-icon.svg" alt="">
+                Comunidade</a>
+            <a href="" class="item-menu">
+                <img src="assets/home/menu/rolex-icon.svg" alt="">
+                Chronos</a>
+            <a href="sobre-nos/" class="item-menu">
+                <img src="assets/home/menu/info-icon.svg" alt="">
+                Sobre nós</a>
+            <a href="" class="item-menu">
+                <img src="assets/home/menu/help-icon.svg" alt="">
+                Ajuda</a>
+        </div>
         <div class="perfil-or-login">
             <div class="img-perfil">
-                <img src="assets/home/menu/login-icon.svg" alt="" width="74px">
+                <img src="assets/home/menu/shrek.svg" alt="" width="60px">
             </div>
             <div class="text">
                 <p id="welcome">Bem vindo,</p>
-                <p id="name-user-or-login">Fazer login
-                    <img src="assets/home/menu/arrow-perfil.svg" alt="">
-                </p>
+                <a href="login/">
+                    <p id="name-user-or-login">Fazer login
+                        <img src="assets/home/menu/arrow-perfil.svg" alt="">
+                    </p>
+                </a>
             </div>
         </div>
         <hr>
         <h2>VER MEU PERFIL 
             <img src="assets/home/menu/arrow-perfil.svg" alt="">
         </h2>
-        <div class="menu">
-            <h3>Menu</h3>
-            <a href="" class="item-menu" style="background-color: var(--secondary-color-gold); color: var(--back-color-default);">
-                <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.2707 0.777328C12.6657 0.356276 13.3343 0.356275 13.7293 0.777328L22.6782 10.3158C23.2773 10.9544 22.8245 12 21.9489 12H4.05107C3.17545 12 2.72268 10.9544 3.32179 10.3158L12.2707 0.777328Z" fill="#212121"/>
-                    <path d="M3.05884 11H10.7059V22H8.05884C5.29741 22 3.05884 19.7614 3.05884 17V11Z" fill="#212121"/>
-                    <path d="M15.2941 11H22.9412V17C22.9412 19.7614 20.7026 22 17.9412 22H15.2941V11Z" fill="#212121"/>
-                    <rect x="3.05884" y="11" width="19.8824" height="7.33333" fill="#212121"/>
-                    </svg>
-                    
-                Página Inicial</a>
-            <a href="" class="item-menu">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                    <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                    <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                    <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                    </svg>
-                Categorias</a>
-            <a href="" class="item-menu">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                </svg>
-                Comunidade</a>
-            <a href="" class="item-menu">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                </svg>
-                Chronos</a>
-            <a href="" class="item-menu">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                </svg>
-                Sobre nós</a>
-            <a href="" class="item-menu">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect x="11.4286" y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect y="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                <rect x="11.4286" width="8.57143" height="8.57143" rx="2" fill="#D9D9D9"/>
-                </svg>
-                Ajuda</a>
-        </div>
-        <!-- <div class="header-nav-menu">
-            <button onclick="closeMenu()">
-                <svg width="75" height="76" viewBox="0 0 75 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect y="28" width="75" height="5.52632" fill="#D9D9D9"/>
-                    <rect y="39.8421" width="75" height="5.52632" fill="#D9D9D9"/>
-                    <rect y="52.4737" width="75" height="5.52632" fill="#D9D9D9"/>
-                    <rect x="5.65863" y="65.0448" width="75.8917" height="5.52632" transform="rotate(-38.7726 5.65863 65.0448)" fill="#D9D9D9"/>
-                    <path d="M8.19844 8.465H13.6134V9.755H8.19844V8.465ZM8.34844 14H6.84844V3.5H14.2584V4.805H8.34844V14ZM17.7349 8.03H23.1349V9.305H17.7349V8.03ZM17.8699 12.695H23.9899V14H16.3699V3.5H23.7799V4.805H17.8699V12.695ZM31.0991 14.12C30.2991 14.12 29.5591 13.99 28.8791 13.73C28.2091 13.46 27.6241 13.085 27.1241 12.605C26.6341 12.115 26.2491 11.545 25.9691 10.895C25.6891 10.245 25.5491 9.53 25.5491 8.75C25.5491 7.97 25.6891 7.255 25.9691 6.605C26.2491 5.955 26.6391 5.39 27.1391 4.91C27.6391 4.42 28.2241 4.045 28.8941 3.785C29.5741 3.515 30.3141 3.38 31.1141 3.38C31.9241 3.38 32.6691 3.52 33.3491 3.8C34.0391 4.07 34.6241 4.475 35.1041 5.015L34.1291 5.96C33.7291 5.54 33.2791 5.23 32.7791 5.03C32.2791 4.82 31.7441 4.715 31.1741 4.715C30.5841 4.715 30.0341 4.815 29.5241 5.015C29.0241 5.215 28.5891 5.495 28.2191 5.855C27.8491 6.215 27.5591 6.645 27.3491 7.145C27.1491 7.635 27.0491 8.17 27.0491 8.75C27.0491 9.33 27.1491 9.87 27.3491 10.37C27.5591 10.86 27.8491 11.285 28.2191 11.645C28.5891 12.005 29.0241 12.285 29.5241 12.485C30.0341 12.685 30.5841 12.785 31.1741 12.785C31.7441 12.785 32.2791 12.685 32.7791 12.485C33.2791 12.275 33.7291 11.955 34.1291 11.525L35.1041 12.47C34.6241 13.01 34.0391 13.42 33.3491 13.7C32.6691 13.98 31.9191 14.12 31.0991 14.12ZM44.7739 3.5H46.2739V14H44.7739V3.5ZM38.7439 14H37.2439V3.5H38.7439V14ZM44.9089 9.32H38.5939V8.015H44.9089V9.32ZM47.8268 14L52.5818 3.5H54.0668L58.8368 14H57.2618L53.0168 4.34H53.6168L49.3718 14H47.8268ZM49.8518 11.375L50.2568 10.175H56.1668L56.6018 11.375H49.8518ZM60.4031 14V3.5H64.4981C65.4181 3.5 66.2031 3.645 66.8531 3.935C67.5031 4.225 68.0031 4.645 68.3531 5.195C68.7031 5.745 68.8781 6.4 68.8781 7.16C68.8781 7.92 68.7031 8.575 68.3531 9.125C68.0031 9.665 67.5031 10.08 66.8531 10.37C66.2031 10.66 65.4181 10.805 64.4981 10.805H61.2281L61.9031 10.115V14H60.4031ZM67.4231 14L64.7531 10.19H66.3581L69.0581 14H67.4231ZM61.9031 10.265L61.2281 9.53H64.4531C65.4131 9.53 66.1381 9.325 66.6281 8.915C67.1281 8.495 67.3781 7.91 67.3781 7.16C67.3781 6.41 67.1281 5.83 66.6281 5.42C66.1381 5.01 65.4131 4.805 64.4531 4.805H61.2281L61.9031 4.055V10.265Z" fill="white"/>
-                </svg>
-            </button>
-        </div>
-        <div class="content-menu">
-            <a href="./categorias/">CATEGORIAS</a>
-            <a href="./comunidade/">COMUNIDADE</a>
-            <a href="./cronologia/">CHRONOS</a>
-            <a href="./login/">LOGIN E CADASTRO</a>
-            <a href="./sobre-nos/">SOBRE NÓS</a>
-        </div> -->
-        
     </nav>
     <header id="header-page" class="header hidden" aria-hidden="false">
         <button aria-label="Botão de 3 barras que da acesso ao menu" onclick="openMenu()">
@@ -135,12 +83,12 @@
     </header>
     <main id="main-page" class="hidden">
             <div class="container-slider">
-                <div class="control-buttons">
+                <div class="control-buttons hidden">
                     <button id="prev-button" class="arrow-slide"><img src="./assets/home/slider/setaSlider.png" alt="prev-button"></button>
                     <button id="next-button" class="arrow-slide"><img src="./assets/home/slider/setaSlider.png" alt="Próxima imagem" width="auto"></button>
                 </div>
                 <div class="container-images">
-                    <div class="radios-slider">
+                    <div class="radios-slider hidden">
                         <input class="radio-btn" type="radio" name="radio0" id="radio0" value="0" onclick="radioBtn(0)" tabindex="0">
                         <input class="radio-btn" type="radio" name="radio1" id="radio1" value="1" onclick="radioBtn(1)">
                         <input class="radio-btn" type="radio" name="radio2" id="radio2" value="2" onclick="radioBtn(2)">
@@ -216,7 +164,7 @@
         <span class="span"></span>
     </section>
     <section id="section-chronos" class="section-chronos hidden">
-        <div class="div-chronos-header">  
+        <div class="div-chronos-header hidden">  
             <svg class="svg-fumaca hidden" id="svg-fumaca-1" width="100%" height="719" viewBox="0 0 271 719" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_2586_19)">
                 <ellipse cx="-130" cy="359.5" rx="151" ry="159.5" fill="#4A4848"/>
@@ -233,7 +181,7 @@
             <p>Para os gregos antigos Khrónos refere-se ao tempo cronológico, ou sequencial, que pode ser medido, associado ao movimento linear das coisas terrenas, com um princípio e um fim.</p>
             <img src="assets/home/chronos/img-chronos.png" alt="Imagem de Chronos, deus da mitologia grega que representa o tempo cronológico" width="80%">
         </div>
-        <div class="div-chronos-mid">
+        <div class="div-chronos-mid hidden">
             <div class="div-img-absolute hidden" id="div-img-absolute-right">
                 <img src="assets/home/chronos/clock-right.png" alt="" width="" class="img-absolute" id="img-absolute-right">
             </div>
@@ -242,7 +190,7 @@
                 <img src="assets/home/chronos/clock-left.png" alt="" width="" class="img-absolute" id="img-absolute-left">
             </div>
         </div>
-        <div class="div-chronos-bottom">
+        <div class="div-chronos-bottom hidden">
             <p>O usuário seleciona uma data e são listadas todas as obras de maior influência e importância daquele ano escolhido.</p>
             <p id="digital-number-2023">2023</p>
             <button tabindex="0" id="btn-chronos">USAR AGORA!</button>
@@ -277,5 +225,8 @@
         </div>
     </section>
     <footer class="hidden" id="footer-page"></footer>
+
+    <!-- JS LINKS -->
+    <script src="script.js" defer></script>
 </body>
 </html>

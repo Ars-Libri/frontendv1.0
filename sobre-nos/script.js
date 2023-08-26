@@ -1,5 +1,8 @@
 function openMenu(){
-    var elementsHidden = document.getElementsByClassName('hidden');
+  document.body.style.backgroundImage = "url('../assets/home/menu/elipses-background.svg')";
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundRepeat = "no-repeat";
+  var elementsHidden = document.getElementsByClassName('hidden');
 
   for(var i = 0;i<elementsHidden.length;i++){
     elementsHidden[i].style.width = '0';
@@ -9,6 +12,9 @@ function openMenu(){
     document.getElementById('nav-general').style.height = 'auto';
 }
 function closeMenu(){
+  document.body.style.backgroundImage = "";
+  document.body.style.backgroundSize = "";
+  document.body.style.backgroundRepeat = "";
     var elementsHidden = document.getElementsByClassName('hidden');
 
     for(var i = 0;i<elementsHidden.length;i++){
