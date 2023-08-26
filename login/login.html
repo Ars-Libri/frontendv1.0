@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- CCS LINKS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-login-html.css">
 
     <!-- JS LINKS -->
     <script src="script.js"></script>
@@ -22,17 +22,20 @@
 </head>
 <body>
     <header>
-        <img src="../assets/login/index/topo-image.svg" alt="">
+        
     </header>
     <main>
-        <p id="desc-page">
-            Escolha uma forma para entrar
-        </p>
-        <div class="options">
-            <a href="./login.html" id="login">Fazer login</a>
-            <a href="./cadastro.html" id="create-account">Criar conta</a>
-            <a href="../index.html" id="back">Voltar</a>
-        </div>
+        <img src="../assets/login/login/logo-ars-libri-modern-golden-whiteback-removebg-preview 1.svg" alt="">
+        <p id="desc-page">Entre com sua conta:</p>
+        <form action="" method="post">
+            <label for="">email:</label>
+            <input type="email" name="email" id="email">
+            <label for="">senha:</label>
+            <input type="password" name="password" id="password">
+            <button type="reset" id="btn-reset">limpar dados</button>
+            <button type="submit" id="btn-submit">entrar</button>
+        </form>
+        <a href="./index.html">voltar</a>
     </main>
 </body>
 </html>

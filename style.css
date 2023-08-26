@@ -22,6 +22,7 @@
     /* fonts */
 
     --title-page-dm-serif: 'DM Serif Display', serif;
+    --title-page-montserrat:  'Montserrat', sans-serif;
     --subtitle-page-dm-serif: 'DM Serif Display', serif;
     --menu-item-dm-serif:'DM Serif Display', serif;
     --title-section-montserrat: 'Montserrat', sans-serif;
@@ -63,52 +64,6 @@ nav#nav-general{
     background-image: url(assets/home/menu/elipses-background.svg);
     background-repeat: no-repeat;
     background-size: cover; */
-}
-
-nav#nav-general .perfil-or-login{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-
-  /* margin-top: 1rem; */
-}
-
-nav#nav-general .perfil-or-login .img-perfil{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 70px;
-  height: 70px;
-
-  background-color: var(--back-img-perfil-menu);
-  border-radius: 50px;
-}
-
-nav#nav-general .perfil-or-login .text #welcome{
-  font-family: var(--menu-item-montserrat);
-  font-size: 12px;
-
-  color: var(--text-color);
-}
-
-nav#nav-general .perfil-or-login .text #name-user-or-login{
-  font-family: var(--menu-item-montserrat);
-  font-size: 18px;
-  font-weight: bold;
-
-  color: var(--text-color);
-
-  display: flex;
-  align-items: center;
-  gap: 1.3rem;
-}
-
-nav#nav-general hr{
-  width: 80%;
-
-  margin-block: 2rem;
 }
 
 nav#nav-general h2{
@@ -166,38 +121,74 @@ nav#nav-general .menu a{
   gap: 1rem;
 }
 
+nav#nav-general .menu .perfil-or-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 
-/* nav#nav-general .header-nav-menu{
-    padding-block: 2rem;
+  /* margin-top: 1rem; */
 }
-nav#nav-general .content-menu{
-    display: flex;
-    flex-direction: column;
 
+nav#nav-general .menu .perfil-or-login .img-perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+
+  background-color: var(--back-img-perfil-menu);
+  border-radius: 50px;
 }
-nav#nav-general .content-menu a{
-    background-color: var(--back-card-color);
-    color: var(--text-color);
 
-    text-decoration: none;
-    font-family: var(--content-menu-montserrat);
-    font-size: 32px;
-    font-weight: 300;
-    
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-inline: 1rem;
+nav#nav-general .menu .perfil-or-login .text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--text-color);
 
-    border-radius: 30px;
+  gap: 0.5rem;
+}
 
-    margin-bottom: 1.5rem;
-    width: 85vw;
-    height: 150px;
+nav#nav-general .menu .perfil-or-login .text #welcome{
+  text-shadow: 2px 2px var(--black);
+  font-family: var(--menu-item-montserrat);
+  font-size: 12px;
 
-    transition: 1s all;
-}  */
+  color: var(--text-color);
+}
+
+nav#nav-general .menu .perfil-or-login .text #name-user-or-login{
+  display: flex;
+  align-items: center;
+
+  gap: 0.7rem;
+
+  text-shadow: 2px 2px var(--black);
+  font-family: var(--menu-item-montserrat);
+  font-size: 20px;
+  font-weight: bold;
+
+  padding: 0;
+  width: auto;
+  height: auto;
+
+  color: var(--text-color);
+}
+
+nav#nav-general .menu .perfil-or-login .text hr{
+  width: 100%;
+}
+
+nav#nav-general .menu .perfil-or-login .text #see-perfil{
+  text-shadow: 2px 2px var(--black);
+  font-family: var(--content-menu-montserrat);
+  font-size: 12px;
+  font-weight: 500;
+}
+
 
 /* HEADER STYLE */
 
