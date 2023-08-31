@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title-page">Cadastro Ars Libri</title>
+    <!-- FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CCS LINKS -->
+    <link rel="stylesheet" href="style-cadastro.css">
+
+    <!-- JS LINKS -->
+    <script src="script.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async="defer"></script>
+    <script src="../node_modules/jwt-decode/build/jwt-decode.js"></script>
+
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <img src="../assets/login/login/logo-ars-libri-modern-golden-whiteback-removebg-preview 1.svg" alt="">
+        <p id="desc-page">Crie sua conta:</p>
+        <form action="" method="post">
+            <label for="name">nome:</label>
+            <input type="text" name="name" id="name">
+            <label for="name">sobrenome:</label>
+            <input type="text" name="lastname" id="lastname">
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email">
+            <label for="dt-nasc">data de nascimento:</label>
+            <input type="date" name="dt-nasc" id="dt-nasc">
+            <label for="password">senha:</label>
+            <input type="password" name="password" id="password">
+            <button type="reset" id="btn-reset">limpar dados</button>
+            <button type="submit" id="btn-submit">entrar</button>
+        </form>
+        <a href="./index.html">voltar</a>
+    </main>
+</body>
+</html>

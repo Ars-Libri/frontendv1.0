@@ -27,9 +27,6 @@ function openMenu(){
   }
 
   //
-
-  document.getElementById('quadrado-de-fundo').style.width = '0';
-  document.getElementById('quadrado-de-fundo').style.height = '0';
   document.getElementById('nav-general').style.width = '100vw';
   document.getElementById('nav-general').style.height = 'auto';
 }
@@ -62,9 +59,6 @@ function closeMenu(){
   }
 
   //
-
-  document.getElementById('quadrado-de-fundo').style.width = '150px';
-  document.getElementById('quadrado-de-fundo').style.height = '150px';
   document.getElementById('nav-general').style.width = '0';
   document.getElementById('nav-general').style.height = '0';
 }

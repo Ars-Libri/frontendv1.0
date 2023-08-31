@@ -208,7 +208,7 @@ header#header-page #logo-header{
     align-items: center;
     justify-content: center;
 }
-header#header-page #logo-header .quadrado-de-fundo{
+/* header#header-page #logo-header .quadrado-de-fundo{
     transform: rotate(135deg);
     background: linear-gradient(225deg, #ffaa00b0, #ffffff10, #151515);
     width: 150px;
@@ -220,7 +220,7 @@ header#header-page #logo-header .quadrado-de-fundo{
     border-radius: 10px;
 
     position: absolute;
-}
+} */
 header#header-page #logo-header img{
     z-index: 1;
 }

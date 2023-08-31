@@ -64,52 +64,6 @@ nav#nav-general{
     background-size: cover; */
 }
 
-nav#nav-general .perfil-or-login{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-
-  /* margin-top: 1rem; */
-}
-
-nav#nav-general .perfil-or-login .img-perfil{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 70px;
-  height: 70px;
-
-  background-color: var(--back-img-perfil-menu);
-  border-radius: 50px;
-}
-
-nav#nav-general .perfil-or-login .text #welcome{
-  font-family: var(--menu-item-montserrat);
-  font-size: 12px;
-
-  color: var(--text-color);
-}
-
-nav#nav-general .perfil-or-login .text #name-user-or-login{
-  font-family: var(--menu-item-montserrat);
-  font-size: 18px;
-  font-weight: bold;
-
-  color: var(--text-color);
-
-  display: flex;
-  align-items: center;
-  gap: 1.3rem;
-}
-
-nav#nav-general hr{
-  width: 80%;
-
-  margin-block: 2rem;
-}
-
 nav#nav-general h2{
   font-family: var(--subtitle-page-montserrat);
   font-weight: bold;
@@ -164,6 +118,75 @@ nav#nav-general .menu a{
 
   gap: 1rem;
 }
+
+nav#nav-general .menu .perfil-or-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  /* margin-top: 1rem; */
+}
+
+nav#nav-general .menu .perfil-or-login .img-perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+
+  background-color: var(--back-img-perfil-menu);
+  border-radius: 50px;
+}
+
+nav#nav-general .menu .perfil-or-login .text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--text-color);
+
+  gap: 0.5rem;
+}
+
+nav#nav-general .menu .perfil-or-login .text #welcome{
+  text-shadow: 2px 2px var(--black);
+  font-family: var(--menu-item-montserrat);
+  font-size: 12px;
+
+  color: var(--text-color);
+}
+
+nav#nav-general .menu .perfil-or-login .text #name-user-or-login{
+  display: flex;
+  align-items: center;
+
+  gap: 0.7rem;
+
+  text-shadow: 2px 2px var(--black);
+  font-family: var(--menu-item-montserrat);
+  font-size: 20px;
+  font-weight: bold;
+
+  padding: 0;
+  width: auto;
+  height: auto;
+
+  color: var(--text-color);
+}
+
+nav#nav-general .menu .perfil-or-login .text hr{
+  width: 100%;
+}
+
+nav#nav-general .menu .perfil-or-login .text #see-perfil{
+  text-shadow: 2px 2px var(--black);
+  font-family: var(--content-menu-montserrat);
+  font-size: 12px;
+  font-weight: 500;
+}
+
 /* CSS HEADER */
 
 header#header-page{
